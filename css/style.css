@@ -1,0 +1,873 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.ml-12 {
+    margin-left: 10px;
+}
+
+/* menu-bar */
+div.menu {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 25px 25px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+
+}
+
+#header {
+    background: url(../images/banner.jpg);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.header-overlay {
+    padding: 0px 0px 118px 0px;
+    background: rgba(48, 52, 79, 0.9);
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-heading {
+    margin-top: 128px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    font-size: 65px;
+    margin-bottom: 30px;
+}
+
+.banner-paragraph {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    margin-bottom: 46px;
+}
+
+.heading a {
+    background-color: #e84545;
+    padding: 18px 55px;
+    color: white;
+    margin: 30px auto 30px auto;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    transition: all linear 0.5s;
+}
+
+.heading a:hover {
+    background-color: red;
+}
+
+/* features */
+#features {
+    margin-top: 94px;
+    margin-bottom: 127px;
+}
+
+.features-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature-box img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.feature-box {
+    width: 295px;
+    margin-right: 75px;
+    margin-bottom: 77px;
+}
+
+#features img {
+    margin: 20px auto 20px auto;
+
+}
+
+#features p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    text-align: center;
+
+}
+
+#features h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Work Section starts */
+#our_work .work-flex {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: 5px;
+    margin-top: -135px;
+    margin-bottom: 100px;
+}
+
+#our_work .work-card {
+    width: 25%;
+    position: relative;
+}
+
+.work-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.work-overlay {
+    color: white;
+    background-color: rgba(214, 66, 66, 0.75);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    cursor: pointer;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0.2s;
+}
+
+.work-card:hover .work-overlay {
+    visibility: visible;
+}
+
+.work-overlay .overlay-heading,
+.overlay-paragraph {
+    color: white;
+}
+
+.work-overlay h5.overlay-heading {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.work-overlay p.overlay-paragraph {
+    color: white;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+/* Team Member start */
+#team {
+    margin-bottom: 90px;
+}
+
+.our-team img {
+    width: 270px;
+    height: 270px;
+    margin-right: 20px;
+}
+
+.our-team h3 {
+    font-size: 22px;
+    font-family: sans-serif;
+    color: #2d3033;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.our-team h4 {
+    color: #e84545;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.our-team p {
+    color: #6c7279;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-top: 30px;
+}
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-linkedin {
+    color: #c5c9cc;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #c5c9cc;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Clients Start */
+#clients {
+    background-color: #533549;
+    margin-bottom: 101px;
+}
+
+.client-testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.client-testimonials h3 {
+    font-family: 'Cardo', serif;
+    font-style: italic;
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 31px;
+}
+
+.client-testimonials h6 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: left;
+    margin-top: 0;
+}
+
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-bottom: -120px;
+    margin-top: 50px;
+}
+
+/* Download Section */
+.download-main {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+
+.download-main h3 {
+    font-size: 28px;
+    font-weight: lighter;
+    color: #2d3033;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+}
+
+.download-main h6 {
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #2d3033;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.download-main a {
+    padding: 13px 82px;
+    background-color: #e84545;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    margin-bottom: 100px;
+    transition: all ease 0.3s;
+    text-transform: uppercase;
+}
+
+.download-main a:hover {
+    background-color: #000;
+}
+
+/* Footer */
+.footer-main {
+    padding: 71px 0px 87px 0px;
+    background-color: #3a3e64;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mt-22 {
+    margin-top: -22px;
+}
+
+.mr-159 {
+    margin-left: 159px;
+}
+
+.footer-card {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.footer-card h4 {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+}
+
+div.social-icon-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.s-icon {
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 2px;
+    margin-top: 0;
+}
+
+div.social-icon-footer a {
+    margin-right: 5px;
+    margin-top: 0;
+}
+
+.footer-card p {
+    color: #999bae;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.footer-card p:nth-child(1) {
+    font-size: 13px;
+}
+
+.footer-bottom {
+    padding: 29px 0px 29px 0px;
+    background-color: #313454;
+}
+
+.footer-bottom {
+    color: #808080;
+    text-align: center;
+}
+
+/* footer end */
+/* Responsive Start */
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .header-overlay {
+        padding: 0px 0px 64px 0px;
+    }
+
+    .banner-heading {
+        font-size: 20px;
+    }
+
+    .banner-paragraph {
+        font-size: 16px;
+    }
+
+    .banner-paragraph br {
+        display: none;
+    }
+
+    /* features */
+    .feature-box {
+        width: 100%;
+        height: auto;
+        margin: 10px auto 10px auto;
+    }
+
+    /* our work */
+
+    #our_work .work-flex {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    #our_work .work-card {
+        width: 100%;
+    }
+
+    .work-card {
+        margin-bottom: 10px;
+    }
+
+    .work-card img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* team section */
+    .col-lg-3 {
+        margin-left: 15px;
+    }
+
+    /* client section */
+    .client-testimonials {
+        padding-bottom: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .client-testimonials h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .client-testimonials h3 br {
+        display: none;
+    }
+
+    .client-testimonials h6 {
+        font-size: 14px;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        margin-bottom: -50px;
+    }
+
+    /* download section */
+    .download-main h3 {
+        font-size: 22px;
+        text-align: center;
+        font-weight: lighter;
+        color: #2d3033;
+        font-family: 'Raleway', sans-serif;
+        margin-bottom: 20px;
+    }
+
+    .download-main h6 {
+        font-size: 13px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        color: #2d3033;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    /* footer start */
+    .footer-main {
+        padding: 71px 0px 10px 0px;
+        background-color: #3a3e64;
+    }
+
+    .footer-content {
+        display: block;
+    }
+
+    .footer-card {
+        width: 100%;
+        height: auto;
+        margin: 20px auto 60px auto;
+    }
+
+    .footer-card:last-child {
+        margin: 20px auto 5px auto;
+    }
+
+    .footer-card h4 {
+        margin-bottom: 20px;
+    }
+
+    .footer-card p {
+        color: #999bae;
+        font-weight: 100;
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .footer-bottom {
+        font-size: 14px;
+    }
+
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .header-overlay {
+        padding: 0px 0px 64px 0px;
+    }
+
+    .banner-heading {
+        font-size: 20px;
+    }
+
+    .banner-paragraph {
+        font-size: 16px;
+    }
+
+    .banner-paragraph br {
+        display: none;
+    }
+
+    /* features */
+    .feature-box {
+        width: 100%;
+        height: auto;
+        margin: 10px auto 10px auto;
+    }
+
+    /* our work */
+
+    #our_work .work-flex {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    #our_work .work-card {
+        width: 100%;
+    }
+
+    .work-card {
+        margin-bottom: 10px;
+    }
+
+    .work-card img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* team section */
+    .col-lg-3 {
+        margin-left: 15px;
+    }
+
+    /* client section */
+    .client-testimonials {
+        padding-bottom: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .client-testimonials h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .client-testimonials h3 br {
+        display: none;
+    }
+
+    .client-testimonials h6 {
+        font-size: 14px;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        margin-bottom: -50px;
+    }
+
+    /* download section */
+    .download-main h3 {
+        font-size: 22px;
+        text-align: center;
+        font-weight: lighter;
+        color: #2d3033;
+        font-family: 'Raleway', sans-serif;
+        margin-bottom: 20px;
+    }
+
+    .download-main h6 {
+        font-size: 13px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        color: #2d3033;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    /* footer start */
+    .footer-main {
+        padding: 71px 0px 10px 0px;
+        background-color: #3a3e64;
+    }
+
+    .footer-content {
+        display: block;
+    }
+
+    .footer-card {
+        width: 100%;
+        height: auto;
+        margin: 20px auto 60px auto;
+    }
+
+    .footer-card:last-child {
+        margin: 20px auto 5px auto;
+    }
+
+    .footer-card h4 {
+        margin-bottom: 20px;
+    }
+
+    .footer-card p {
+        color: #999bae;
+        font-weight: 100;
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .footer-bottom {
+        font-size: 14px;
+    }
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .header-overlay {
+        padding: 0px 0px 64px 0px;
+    }
+
+    .banner-heading {
+        font-size: 20px;
+    }
+
+    .banner-paragraph {
+        font-size: 16px;
+    }
+
+    .banner-paragraph br {
+        display: none;
+    }
+
+    /* features */
+    .feature-box {
+        width: 100%;
+        height: auto;
+        margin: 10px auto 10px auto;
+    }
+
+    /* our work */
+
+    #our_work .work-flex {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    #our_work .work-card {
+        width: 100%;
+    }
+
+    .work-card {
+        margin-bottom: 10px;
+    }
+
+    .work-card img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* team section */
+    .col-lg-3 {
+        margin-left: 15px;
+    }
+
+
+    /* client section */
+    .client-testimonials {
+        padding-bottom: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .client-testimonials h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .client-testimonials h3 br {
+        display: none;
+    }
+
+    .client-testimonials h6 {
+        font-size: 14px;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        margin-bottom: -50px;
+    }
+
+    /* download section */
+    .download-main h3 {
+        font-size: 22px;
+        text-align: center;
+        font-weight: lighter;
+        color: #2d3033;
+        font-family: 'Raleway', sans-serif;
+        margin-bottom: 20px;
+    }
+
+    .download-main h6 {
+        font-size: 13px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        color: #2d3033;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    /* footer start */
+    .footer-main {
+        padding: 71px 0px 10px 0px;
+        background-color: #3a3e64;
+    }
+
+    .footer-content {
+        display: block;
+    }
+
+    .footer-card {
+        width: 100%;
+        height: auto;
+        margin: 20px auto 60px auto;
+    }
+
+    .footer-card:last-child {
+        margin: 20px auto 5px auto;
+    }
+
+    .footer-card h4 {
+        margin-bottom: 20px;
+    }
+
+    .footer-card p {
+        color: #999bae;
+        font-weight: 100;
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .footer-bottom {
+        font-size: 14px;
+    }
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .col-lg-3 br {
+        display: none;
+    }
+
+    .col-lg-3 {
+        margin-right: 170px;
+        margin-left: 70px;
+    }
+
+    .team-content {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .client-testimonials h3 {
+        margin-bottom: 5px;
+    }
+
+    .client-testimonials h3 br {
+        display: none;
+    }
+
+    .client-testimonials h6 {
+        font-size: 10px;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        margin-bottom: -50px;
+    }
+
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    ...
+}
